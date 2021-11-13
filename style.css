@@ -1,0 +1,120 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.container {
+    width:100%;
+    height:100vh;
+    background:url(https://images.unsplash.com/photo-1635864672004-6f133e9293d6?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIyfHJuU0tESHd3WVVrfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60) center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+
+    
+}
+
+.banner {
+    width:100%;
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    text-align: center;
+
+}
+
+
+.banner h1 {
+    font-size: 80px;
+    color:#000;
+    font-weight:500;
+    margin-bottom:210px;
+    animation: moveToLeft 2s;
+}
+
+.banner span {
+    text-transform: uppercase;
+    font-weight: 700;
+    color:rgb(7, 128, 121);
+}
+
+.banner p {
+    font-size: 50px;
+    font-weight: 300;
+    color: #000;
+    margin-top:-160px;
+    animation:moveToRight 2s;
+}
+
+.banner button {
+    width:180px;
+    padding:12px;
+    margin:20px;
+    margin-bottom:180px;
+    border:2px solid #eee;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 18px;
+    outline: none;
+    letter-spacing: 1px;
+
+}
+
+.btn-left {
+    background-color:teal;
+    color:#fff;
+    animation-name:animateBtn;
+    animation-duration:1s;
+    animation-delay: 1.5s;
+    animation-fill-mode:backwards;
+}
+
+.btn-right {
+    background-color:transparent;
+    color:#fff;
+    animation-name:animateBtn;
+    animation-duration:1s;
+    animation-delay: 2.3s;
+    animation-fill-mode:backwards;
+
+}
+
+
+@keyframes moveToLeft {
+   0% {
+       transform:translateX(120px);
+       opacity: 0;
+   }
+   100% {
+       transform:translateX(0);
+       opacity: 1;
+
+   }
+}
+
+@keyframes moveToRight {
+    0% {
+        transform:translateX(-120px);
+        opacity: 0;
+    }
+    100% {
+        transform:translateX(0);
+        opacity: 1;
+ 
+    }
+ }
+
+@keyframes animateBtn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
